@@ -9,10 +9,8 @@ function mergesort(array) {
         for (let leftIndex = 0; leftIndex < n; leftIndex += 2 * subSize) {
             // Calculate the mid point of the subarray for the merge step.
             const mid = Math.min(leftIndex + subSize - 1, n - 1);
-            //console.log(mid);
             // Calculate the ending index for the second subarray
             const rightIndex = Math.min(leftIndex + 2 * subSize - 1, n - 1);
-            // console.log(rightIndex);
             // Call the merge function 
             merge(array, leftIndex, mid, rightIndex);
         }
