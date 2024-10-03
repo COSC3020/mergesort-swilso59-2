@@ -1,18 +1,18 @@
 function mergesort(array) {
     // Get the length of the array 
-    const arrLength = array.length:
+    const n = array.length;
 
     // Loop for subarrays
     // There size starting at one then doubling till we reach the arrLength
-    for (let subSize = 1; subSize < arrLength; subSize *= 2) {
+    for (let subSize = 1; subSize < n; subSize *= 2) {
         // Now we want to pick the start point or left Index of each subarray that will me merged in each current iteration 
-        for (let leftIndex = 0; leftIndex < arrLength; leftindex += 2 * subSize) {
+        for (let leftIndex = 0; leftIndex < n; leftIndex += 2 * subSize) {
             // Calculate the mid point of the subarray for the merge step.
-            const middle = Math.min(leftIndex + subSize - 1, arrLength - 1);
-            console.log(mid);
+            const mid = Math.min(leftIndex + subSize - 1, n - 1);
+            //console.log(mid);
             // Calculate the ending index for the second subarray
-            const rightIndex = Math.min(leftIndex + 2 * subSize -1, arrLength - 1);
-            console.log(rightIndex);
+            const rightIndex = Math.min(leftIndex + 2 * subSize - 1, n - 1);
+            // console.log(rightIndex);
             // Call the merge function 
             merge(array, leftIndex, mid, rightIndex);
         }
