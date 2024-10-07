@@ -18,12 +18,13 @@ markdown file.
 ## Answer
 
 Looking at our implementation we have:
+- Outer loop: This loop runs $\log_{2}(n)$ times due to the currSize doubling each iteration
+- Inner loop: This loop runs $n$ times as it processes all elements of the array. esentially using the subarrays to cover the entire 
+  array of size $n$
+- merge function: In this fucntion we have a while loop that shifts all elements between lo and start2 to the right one space
+- This gives us a worst-case runtime $\Theta(n^{2}\log_{2}(n)$ 
 
-
-
-
-
-I started trying to complete this project on my own. I was having trouble getting my function to pass the test code. I tried to use chat GPT to help me find and fix the problem but Nothing seemed to work. This lead me to looking at my previous repository as I remember having a similar issue before. I think I could have probably just had some sort of spelling error as my implementation was not far off from what I had before. I also wanted to take a look at some other students repositories to see how they are implementing there functions and analysising them. Here are the repositories I looked at that I found helpful with both the implementation and understanding the analysis. 
+I started trying to complete this project on my own. I was having trouble getting my function to pass the test code. I tried to use chat GPT to help me find and fix the problem but Nothing seemed to work. This lead me to looking at my previous repository as I remember having a similar issue before. I think I could have probably just had some sort of spelling error as my implementation was not far off from what I had before. I also wanted to take a look at some other students repositories to see how they are implementing there functions and analysising them. Here are the repositories I looked at that I found helpful with both the implementation and understanding the analysis. It was pointed out that my work resembled the work from my previous repository. So, I decided start from the begining again. This gave me a good refesher on this assignment. I then went back to the sorting lectures and reviewed the material for mergesort. I ended up using the example code provided in the lecture and got it so that it passed the test-code provided. After I had a working version of a recursive mergesort. I went throught the code replacing parts of it that used recursion with iteration. I then made changes the the merge function so that instead of using a temp array we shift all the elements in the orignial array. This in-place merge function is what causes us to get a worst case  runtime of $\Theta(n^{2}\log_{2}(n)$.   
 
 https://github.com/COSC3020/mergesort-swilso59-1
 https://github.com/COSC3020/mergesort-IshitaPatel18
