@@ -18,12 +18,10 @@ markdown file.
 ## Answer
 
 Looking at our implementation we have:
-- Outer loop: $\log_{2}(n)$ subsize starts at $1$ and doubles with each iteration to $n$ the length or the array 
-- Inner loop: $n$ The number of iterations of the inner loop is proportional to the total number of elements in the array $n$
-- Merge function: $n$ Takes adjacent subarrays and shifts elements when needed then merges them. In the worst case the 
-  function will need to merge and shift every element. Which mean that the merge step takes quadradic time.
 
-Time complexity of $T(n) \in O(n^{2}\log_{2}(n))$
+
+
+
 
 I started trying to complete this project on my own. I was having trouble getting my function to pass the test code. I tried to use chat GPT to help me find and fix the problem but Nothing seemed to work. This lead me to looking at my previous repository as I remember having a similar issue before. I think I could have probably just had some sort of spelling error as my implementation was not far off from what I had before. I also wanted to take a look at some other students repositories to see how they are implementing there functions and analysising them. Here are the repositories I looked at that I found helpful with both the implementation and understanding the analysis. 
 
