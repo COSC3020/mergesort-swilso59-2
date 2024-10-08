@@ -1,4 +1,4 @@
-function mergesort(x) {
+function iteritiveMergesort(x) {
     let n = x.length;
 
     // Current size of subarrays to merge, starting with 1
@@ -8,13 +8,13 @@ function mergesort(x) {
             let mid = lo + currSize - 1;
             let hi = Math.min(lo + 2 * currSize - 1, n - 1);
 
-            merge(x, lo, mid, hi);
+            iteritiveMerge(x, lo, mid, hi);
         }
     }
     return x;
 }
 
-function merge(x, lo, mid, hi) {
+function iteritiveMerge(x, lo, mid, hi) {
     let start2 = mid + 1;
 
     // If the direct merge is already sorted
