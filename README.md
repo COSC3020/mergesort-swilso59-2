@@ -33,7 +33,7 @@ https://github.com/COSC3020/mergesort-IshitaPatel18
 https://github.com/COSC3020/mergesort-SamuelGlz-1
 https://github.com/COSC3020/mergesort-KobeLimon21
 
-
+https://www.w3schools.com/jsref/met_console_time.asp
 
 “I certify that I have listed all sources used to complete this exercise, including the use
 of any Large Language Models. All of the work is my own, except where stated
