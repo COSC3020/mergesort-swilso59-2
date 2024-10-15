@@ -1,4 +1,4 @@
-function iteritiveMergesort(x) {
+function iterativeMergesort(x) {
     let n = x.length;
 
     // Current size of subarrays to merge, starting with 1
